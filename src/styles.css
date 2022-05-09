@@ -4,6 +4,49 @@ font-family: 'Josefin Slab', serif;
 font-family: 'Leckerli One', cursive;
 font-family: 'Love Ya Like A Sister', cursive;
 font-family: 'Philosopher', sans-serif;*/
+:root {
+  --primary-color: #ccffec;
+}
+
 body {
+  background: var(--primary-color);
   font-family: "Josefin Slab", serif;
+}
+
+li {
+  list-style: none;
+}
+
+.homepage-hero {
+  margin-top: 200px;
+  text-align: center;
+}
+
+.homepage-hero h1 {
+  font-size: 96px;
+}
+
+.homepage-link {
+  color: black;
+  text-decoration: none;
+}
+
+.homepage-link:hover {
+  color: black;
+}
+
+.homepage-links {
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
+  margin: 100px auto;
+  margin-top: 0;
+  max-width: 600px;
+  text-align: center;
+}
+
+@media (max-width: 576px) {
+  .homepage-hero h1 {
+    font-size: 74px;
+  }
 }
