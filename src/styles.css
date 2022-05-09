@@ -17,13 +17,14 @@ li {
   list-style: none;
 }
 
-.homepage-hero {
-  margin-top: 200px;
+h1 {
+  color: black;
+  font-size: 64px;
   text-align: center;
 }
 
-.homepage-hero h1 {
-  font-size: 96px;
+.homepage-hero {
+  margin-top: 200px;
 }
 
 .homepage-link {
@@ -45,8 +46,12 @@ li {
   text-align: center;
 }
 
+.main-headline {
+ font-size: 96px;
+}
+
 @media (max-width: 576px) {
-  .homepage-hero h1 {
+ h1 {
     font-size: 74px;
   }
 }
