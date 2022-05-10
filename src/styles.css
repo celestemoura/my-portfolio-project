@@ -4,7 +4,9 @@ font-family: 'Josefin Slab', serif;
 font-family: 'Leckerli One', cursive;
 font-family: 'Love Ya Like A Sister', cursive;
 font-family: 'Philosopher', sans-serif;*/
+
 :root {
+  --border-radius: 18px;
   --primary-color: #ccffec;
 }
 
@@ -20,7 +22,12 @@ li {
 h1 {
   color: black;
   font-size: 64px;
+  margin: 30px 0;
   text-align: center;
+}
+
+.container {
+  max-width: 1200px;
 }
 
 .homepage-hero {
@@ -29,6 +36,7 @@ h1 {
 
 .homepage-link {
   color: black;
+  font-size: 18px;
   text-decoration: none;
 }
 
@@ -36,7 +44,7 @@ h1 {
   color: black;
 }
 
-.homepage-links {
+.homepage-links-container {
   display: flex;
   flex: 1;
   justify-content: space-evenly;
@@ -46,12 +54,38 @@ h1 {
   text-align: center;
 }
 
-.main-headline {
- font-size: 96px;
+.headline-home {
+  font-size: 96px;
+  margin: 0;
+}
+
+.project-image {
+  border-radius: var(--border-radius);
+}
+
+.project-row {
+  padding: 30px 0;
+}
+
+.tile-caption {
+  padding: 100px 0;
 }
 
 @media (max-width: 576px) {
- h1 {
+  .headline-home {
     font-size: 74px;
+  }
+
+  .about-tiles {
+    display: block;
+    flex-direction: column;
+  }
+
+  .homepage-links-container {
+    flex-direction: column;
+  }
+
+  .homepage-links-container li {
+    padding: 10px;
   }
 }
