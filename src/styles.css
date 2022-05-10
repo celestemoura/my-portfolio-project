@@ -6,8 +6,8 @@ font-family: 'Love Ya Like A Sister', cursive;
 font-family: 'Philosopher', sans-serif;*/
 
 :root {
-  --border-radius: 18px;
-  --primary-color: #ccffec;
+  --border-radius: 9px;
+  --primary-color: #e7eaf6;
 }
 
 body {
@@ -22,8 +22,24 @@ li {
 h1 {
   color: black;
   font-size: 64px;
-  margin: 30px 0;
+  margin: 30px 0 60px;
   text-align: center;
+}
+
+h5 {
+  margin-bottom: 0;
+}
+
+p {
+  font-size: 18px;
+}
+
+.about-image {
+  max-width: 100%;
+}
+
+.row {
+  --bs-gutter-x: 0;
 }
 
 .container {
@@ -51,6 +67,7 @@ h1 {
   margin: 100px auto;
   margin-top: 0;
   max-width: 600px;
+  padding-left: 0;
   text-align: center;
 }
 
@@ -60,25 +77,26 @@ h1 {
 }
 
 .project-image {
-  border-radius: var(--border-radius);
+  display: block;
+  margin: 0 auto;
 }
 
 .project-row {
-  padding: 30px 0;
+  display: flex;
+  justify-content: center;
 }
 
 .tile-caption {
-  padding: 100px 0;
+  text-align: center;
 }
 
 @media (max-width: 576px) {
-  .headline-home {
-    font-size: 74px;
+  p {
+    text-align: center;
   }
 
-  .about-tiles {
-    display: block;
-    flex-direction: column;
+  .headline-home {
+    font-size: 74px;
   }
 
   .homepage-links-container {
