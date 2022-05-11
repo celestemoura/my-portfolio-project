@@ -10,6 +10,16 @@ font-family: 'Philosopher', sans-serif;*/
   --primary-color: #e7eaf6;
 }
 
+a {
+  color: rgb(0, 0, 0, 0.5);
+  font-size: 18px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
+
 body {
   background: var(--primary-color);
   font-family: "Josefin Slab", serif;
@@ -38,26 +48,12 @@ p {
   max-width: 100%;
 }
 
-.row {
-  --bs-gutter-x: 0;
-}
-
 .container {
   max-width: 1200px;
 }
 
 .homepage-hero {
   margin-top: 200px;
-}
-
-.homepage-link {
-  color: black;
-  font-size: 18px;
-  text-decoration: none;
-}
-
-.homepage-link:hover {
-  color: black;
 }
 
 .homepage-links-container {
@@ -84,6 +80,10 @@ p {
 .project-row {
   display: flex;
   justify-content: center;
+}
+
+.row {
+  --bs-gutter-x: 0;
 }
 
 .tile-caption {
