@@ -26,11 +26,9 @@ body {
 }
 
 footer {
-  margin: 50px 0;
-}
-
-footer a {
-  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
 }
 
 h1 {
@@ -50,13 +48,18 @@ li {
 
 p {
   font-size: 18px;
+  text-align: center;
 }
 
 .about-image {
-  max-width: 100%;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  max-height: 400px;
 }
 
 .container {
+  margin-bottom: 50px;
   max-width: 1200px;
 }
 
@@ -81,8 +84,16 @@ p {
 }
 
 .project-image {
+  border-radius: 10px;
   display: block;
   margin: 0 auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  max-height: 500px;
+}
+
+.col-md {
+  margin: 10px;
 }
 
 .project-row {
@@ -94,15 +105,9 @@ p {
   --bs-gutter-x: 0;
 }
 
-.fa-brands {
+.footer-icon {
   font-size: 22px;
   padding: 0 5px;
-}
-
-.social-media-icons {
-display: flex;
-justify-content: center;
-margin-top: 30px;
 }
 
 .tile-caption {
@@ -110,14 +115,6 @@ margin-top: 30px;
 }
 
 @media (max-width: 576px) {
-  footer {
-    margin: 20px 0;
-  }
-
-  p {
-    text-align: center;
-  }
-
   .headline-home {
     font-size: 74px;
   }
@@ -128,5 +125,10 @@ margin-top: 30px;
 
   .homepage-links-container li {
     padding: 10px;
+  }
+
+  .project-image {
+    margin-bottom: 0;
+    margin-top: 0;
   }
 }
