@@ -23,33 +23,44 @@ a:hover {
 body {
   background: var(--primary-color);
   font-family: "Josefin Slab", serif;
-}
-
-footer {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
+  padding-top: 50px;
 }
 
 h1 {
   color: black;
-  font-size: 64px;
-  margin: 0 0 30px 0;
+  margin: 0 0 20px 0;
   text-align: center;
 }
 
-h5 {
-  font-size: 24px;
-  margin-bottom: 0;
+h2 {
+  color: black;
+  font-size: 52px;
+  margin: 0 0 20px 0;
+  padding-top: 100px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 28px;
+  text-align: left;
 }
 
 li {
   list-style: none;
 }
 
+nav {
+  background-color: var(--primary-color);;
+}
+
 p {
   font-size: 18px;
-  text-align: center;
+}
+
+ul {
+  color: #8c8d95;
+  padding: 0;
+  text-align: left;
 }
 
 .about-image {
@@ -59,13 +70,24 @@ p {
   max-height: 400px;
 }
 
+.contact-links {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0 450px 0;
+}
+
 .container {
-  margin-bottom: 50px;
   max-width: 1200px;
 }
 
+.email-address {
+  display: block;
+  font-size: 26px;
+  margin: 30px 0;
+}
+
 .homepage-hero {
-  margin-top: 200px;
+  margin: 250px auto;
 }
 
 .homepage-links-container {
@@ -84,22 +106,22 @@ p {
   margin: 0;
 }
 
+.project-description {
+  position: absolute;
+  top: 30%;
+}
+
 .project-image {
   border-radius: 10px;
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  max-height: 500px;
+  width: 100%;
 }
 
-.col-md {
-  margin: 10px;
+.project-col {
+  padding: 20px;
 }
 
-.project-row {
-  display: flex;
-  justify-content: center;
+.project-description-container {
+  position: relative;
 }
 
 .row {
@@ -107,13 +129,13 @@ p {
 }
 
 .footer-icon {
-  font-size: 22px;
-  padding: 0 5px;
+  font-size: 40px;
+  padding: 0 20px;
 }
 
-.tile-caption {
-  text-align: center;
-}
+/* .work-container {
+  background-color: green;
+} */
 
 @media (max-width: 576px) {
   .headline-home {
